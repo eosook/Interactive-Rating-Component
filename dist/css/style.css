@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Overpass, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: hsl(216, 12%, 8%);
+}
+
+.rating-page {
+  background-color: hsla(213, 19%, 18%, 0.2);
+  border-radius: 20px;
+  margin: 0 auto;
+  width: 400px;
+  height: 400px;
+  padding: 30px;
+  box-sizing: border-box;
+}
+.rating-page .star-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(216, 12%, 54%);
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+.rating-page .star-container .star-icon {
+  height: 40%;
+}
+.rating-page-title {
+  color: hsl(0, 0%, 100%);
+  font-size: 28px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.rating-page-body {
+  color: hsl(217, 12%, 63%);
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+.rating-page .rating-button-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.rating-page .rating-button {
+  background-color: hsla(216, 12%, 54%, 0.3);
+  color: hsl(216, 12%, 54%);
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 25px;
+}
+.rating-page .rating-button:hover {
+  background-color: hsl(216, 12%, 54%);
+}
+.rating-page .rating-button:focus {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+.rating-page .submit-button {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+  font-size: 15px;
+  font-weight: bold;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 20px;
+}
+.rating-page .submit-button:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+
+.submit-page {
+  background-color: hsla(213, 19%, 18%, 0.2);
+  border-radius: 20px;
+  margin: 0 auto;
+  width: 400px;
+  height: 400px;
+  padding: 30px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.submit-page .thank-you-icon {
+  width: 50%;
+  height: 30%;
+}
+.submit-page .submit-rating {
+  background-color: hsl(213, 19%, 18%);
+  color: hsl(25, 97%, 53%);
+  font-size: 15px;
+  margin-top: 30px;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+.submit-page .submit-thanks {
+  color: hsl(0, 0%, 100%);
+  font-size: 28px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+.submit-page .submit-body {
+  color: hsl(216, 12%, 54%);
+  font-size: 15px;
+}
+
+.hidden {
+  display: none;
+}/*# sourceMappingURL=style.css.map */

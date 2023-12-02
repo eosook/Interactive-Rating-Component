@@ -1,0 +1,152 @@
+$primary-orange: hsl(25, 97%, 53%);
+
+$neutral-white: hsl(0, 0%, 100%);
+$neutral-grey-light: hsl(217, 12%, 63%);
+$neutral-grey-med: hsl(216, 12%, 54%);
+$neutral-grey-med-trans: hsla(216, 12%, 54%, 0.3);
+$neutral-blue-dark: hsl(213, 19%, 18%);
+$neutral-blue-dark-light: hsla(213, 19%, 18%, 0.2);
+$neutral-blue-darker: hsl(216, 12%, 8%);
+
+$font-med: 400;
+$font-bold: 700;
+
+$font-size: (
+    "head": 28px,
+    "body": 15px
+);
+
+@mixin page-container{
+    background-color: $neutral-blue-dark-light;
+    border-radius: 20px;
+    margin: 0 auto;
+    width: 400px;
+    height: 400px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Overpass, sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: $neutral-blue-darker;
+}
+
+.rating-page{
+    @include page-container;
+
+    .star-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $neutral-grey-med;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        
+        .star-icon{
+            height: 40%;
+        }
+    }
+
+    &-title{
+        color: $neutral-white;
+        font-size: map-get($font-size, head);
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+
+    &-body{
+        color: $neutral-grey-light;
+        font-size: map-get($font-size, body);
+        margin-bottom: 30px;
+    }
+
+    .rating-button-container{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .rating-button{
+        background-color: $neutral-grey-med-trans;
+        color: $neutral-grey-med;
+        width: 50px;
+        height: 50px;
+        border: none;
+        border-radius: 25px;
+
+        &:hover{
+            background-color: $neutral-grey-med;
+        }
+
+        &:focus{
+            background-color: $primary-orange;
+            color: $neutral-white;
+        }
+    }
+
+    .submit-button{
+        background-color: $primary-orange;
+        color: $neutral-white;
+        font-size: map-get($font-size, body);
+        font-weight: bold;
+        width: 100%;
+        padding: 12px;
+        border: none;
+        border-radius: 20px;
+
+        &:hover{
+            background-color: $neutral-white;
+            color: $primary-orange;
+        }
+    }
+}
+
+.submit-page{
+    @include page-container;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+    .thank-you-icon{
+        width: 50%;
+        height: 30%;
+    }
+
+    .submit-rating{
+        background-color: $neutral-blue-dark;
+        color: $primary-orange;
+        font-size: map-get($font-size, body);
+        margin-top: 30px;
+        padding: 10px 20px;
+        border-radius: 20px;
+    }
+    
+    .submit-thanks{
+        color: $neutral-white;
+        font-size: map-get($font-size, head);
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
+    .submit-body{
+        color: $neutral-grey-med;
+        font-size: map-get($font-size, body);
+    }
+}
+
+.hidden{
+    display: none;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="dist/css/style.css">
+  
+  <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500&family=Overpass&family=Red+Hat+Display:wght@500&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Interactive rating component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <!-- Rating state start -->
+  <div class="rating-page" id="first-page">
+    <div class="star-container">
+      <image src="images/icon-star.svg" class="star-icon" alt="Star Icon"/>
+    </div>
+    <h1 class="rating-page-title">How did we do?</h1>
+    <div class="rating-page-body">
+      Please let us know how we did with your support request. All feedback is appreciated 
+      to help us improve our offering!
+    </div>
+    <div class="rating-button-container">
+      <button class="rating-button" id="button-1">1</button>
+      <button class="rating-button" id="button-2">2</button>
+      <button class="rating-button" id="button-3">3</button>
+      <button class="rating-button" id="button-4">4</button>
+      <button class="rating-button" id="button-5">5</button>
+    </div>
+    <button class="submit-button" id="submit-button">S U B M I T</button>
+  </div>
+  <!-- Rating state end -->
+
+  <!-- Thank you state start -->
+  <div class="submit-page hidden" id="second-page">
+    <img src="images/illustration-thank-you.svg" class="thank-you-icon" alt="Thank You Icon"/>
+    <div class="submit-rating">
+      You selected <span id="rating"></span> out of 5
+    </div>
+
+    <h1 class="submit-thanks">Thank you!</h1>
+    <div class="submit-body">
+      We appreciate you taking the time to give a rating. If you ever need more support, 
+      don’t hesitate to get in touch!
+    </div>
+  </div>
+  <!-- Thank you state end -->
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Eo Soo</a>.
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
